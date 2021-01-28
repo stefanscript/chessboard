@@ -6,7 +6,7 @@ const squares = Array(64).fill(0);
 function App() {
     return (
         <div className="chessboard">
-            {squares.map((square, index) => <div key={index} className={`square ${getSide(index)}`}>{index}</div>)}
+            {squares.map((square, index) => <div key={index} className={`square ${getSide(index)}`} />)}
         </div>
     );
 }
