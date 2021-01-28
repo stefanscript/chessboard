@@ -1,3 +1,8 @@
+:root {
+  --darkbrown: #6e3b3b;
+  --brown: #be6a15;
+  --sand: #f3cf7a;
+}
 body {
   margin: 0;
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
@@ -7,7 +12,23 @@ body {
   -moz-osx-font-smoothing: grayscale;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+.chessboard {
+  width: 600px;
+  height: 600px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: repeat(8, 12.5%);
+  grid-template-rows: repeat(8, 12.5%);
+}
+
+.square {
+  width: 100%;
+  height: 100%;
+  background-color: var(--brown);
+  border:2px solid var(--darkbrown);
+  color: #000;
+  font-size: 10px;
+}
+.square.white {
+  background-color: var(--sand);
 }
