@@ -1,0 +1,85 @@
+.bishop {
+    position: absolute;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border: 0;
+    padding: 0;
+    margin: 0;
+    background: transparent;
+}
+.bishop .base {
+    background-color: #fff;
+    width: 45%;
+    height: 10%;
+    border-radius: 30%;
+    position: relative;
+    top: -1px;
+}
+.bishop .base-top {
+    background-color: #fff;
+    width: 34%;
+    height: 7%;
+    border-radius: 41%;
+}
+.bishop .trunk {
+    background-color: #fff;
+    width: 20%;
+    height: 24%;
+    position: relative;
+    border-top-left-radius: 20%;
+    border-top-right-radius: 20%;
+    overflow: hidden;
+}
+.bishop .trunk:after,
+.bishop .trunk:before {
+    content: " ";
+    position: absolute;
+    top: 0;
+    right: 104%;
+    width: 100%;
+    padding-top: 200%;
+    border-radius: 50%;
+    background-color: var(--sand);
+    transform: rotate(35deg);
+}
+.bishop .trunk:after {
+    left: 104%;
+    transform: rotate(-35deg);
+}
+.black .bishop .trunk:after,
+.black .bishop .trunk:before {
+    background-color: var(--brown);
+}
+.bishop .top-collar {
+    background-color: #fff;
+    width: 28%;
+    height: 4%;
+    border-radius: 100%;
+}
+.bishop .top {
+    background-color: #fff;
+    width: 22%;
+    height: 18%;
+    border-radius: 200% 200% 0 0;
+}
+.bishop .top-hat {
+    background-color: #fff;
+    width: 10%;
+    height: 6%;
+    border-radius: 100%;
+}
+
+.bishop.black .top,
+.bishop.black .top-collar,
+.bishop.black .top-hat,
+.bishop.black .trunk,
+.bishop.black .base,
+.bishop.black .base-top {
+    background-color: #000;
+}

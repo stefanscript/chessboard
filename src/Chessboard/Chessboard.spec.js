@@ -17,4 +17,9 @@ describe("Chessboard", () => {
         
         expect(screen.getAllByRole("button", {name: /knight/i})).toHaveLength(4);
     });
+    it("should show 4 bishops", () => {
+        render(<Chessboard />);
+        
+        expect(screen.getAllByRole("button", {name: /bishop/i})).toHaveLength(4);
+    });
 });
