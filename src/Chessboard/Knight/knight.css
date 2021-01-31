@@ -1,0 +1,71 @@
+.knight {
+    position: absolute;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border: 0;
+    padding: 0;
+    margin: 0;
+    background: transparent;
+}
+
+.knight .base {
+    background-color: #fff;
+    width: 44%;
+    height: 10%;
+    position: relative;
+    border-radius: 30%;
+}
+
+.knight .body {
+    background-color: #fff;
+    width: 28%;
+    height: 30%;
+    position: relative;
+    overflow: hidden;
+    border-radius: 90% 0 0 0;
+}
+
+.knight .head {
+    background-color: #fff;
+    width: 30%;
+    height: 20%;
+    border-radius: 200% 125% 125% 100%;
+    position: relative;
+    transform: rotate(-10deg);
+    bottom: -3%;
+}
+
+.knight .snout {
+    background-color: #fff;
+    width: 50%;
+    height: 60%;
+    border-radius: 100% 0 0 100%;
+    position: absolute;
+    top: 40%;
+    left: -24%;
+    transform: rotate(-20deg);
+}
+.knight .ears {
+    position: absolute;
+    top: -10%;
+    right: 1%;
+    background-color: #fff;
+    width: 40%;
+    height: 20%;
+    border-radius: 100% 0 0 100%;
+    transform: rotate(80deg);
+}
+
+.knight.black .base,
+.knight.black .body,
+.knight.black .head,
+.knight.black .snout,
+.knight.black .ears {
+    background-color: #000;
+}

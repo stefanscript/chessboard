@@ -1,9 +1,10 @@
 import React from "react";
 import "./rook.css";
+import cn from "classnames";
 
-function Pawn() {
+function Rook({black, white}) {
     return (
-        <button aria-pressed={"false"} aria-label={"rook"} className={"rook"} >
+        <button aria-pressed={"false"} aria-label={"rook"} className={cn("rook", {"black": black, white: white})} >
             <div className={"top"}>
                 <div className={"top-brick"} />
                 <div className={"top-brick"} />
@@ -16,4 +17,4 @@ function Pawn() {
     );
 }
 
-export default Pawn;
+export default Rook;

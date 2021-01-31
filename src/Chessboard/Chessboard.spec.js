@@ -12,4 +12,9 @@ describe("Chessboard", () => {
         
         expect(screen.getAllByRole("button", {name: /rook/i})).toHaveLength(4);
     });
+    it("should show 4 knight", () => {
+        render(<Chessboard />);
+        
+        expect(screen.getAllByRole("button", {name: /knight/i})).toHaveLength(4);
+    });
 });

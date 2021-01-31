@@ -68,3 +68,10 @@
     height: 22%;
     border-radius: 50%;
 }
+.pawn.black .top,
+.pawn.black .top-collar,
+.pawn.black .trunk,
+.pawn.black .base,
+.pawn.black .base-top {
+    background-color: #000;
+}

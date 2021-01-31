@@ -15,24 +15,27 @@
 }
 .rook .base {
     background-color: #fff;
-    width: 46%;
+    width: 44%;
     height: 10%;
     position: relative;
+    border-radius: 30%;
 }
 .rook .trunk {
     background-color: #fff;
-    width: 34%;
+    width: 32%;
     height: 30%;
     position: relative;
     overflow: hidden;
 }
 .rook .top-collar {
     background-color: #fff;
-    width: 46%;
+    width: 40%;
     height: 10%;
+    border-bottom-left-radius: 30%;
+    border-bottom-right-radius: 30%;
 }
 .rook .top {
-    width: 46%;
+    width: 40%;
     height: 5%;
     display: flex;
     justify-content: space-between;
@@ -41,4 +44,10 @@
     width: 25%;
     height: 100%;
     background-color: #fff;
+}
+.rook.black .top-collar,
+.rook.black .trunk,
+.rook.black .base,
+.rook.black .top-brick {
+    background-color: #000;
 }
