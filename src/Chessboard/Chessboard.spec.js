@@ -5,6 +5,11 @@ describe("Chessboard", () => {
     it("should show 16 pawn", () => {
         render(<Chessboard />);
         
-        expect(screen.getAllByRole("button", {name: /pawn/i, hidden: true})).toHaveLength(16);
-    })
+        expect(screen.getAllByRole("button", {name: /pawn/i})).toHaveLength(16);
+    });
+    it("should show 4 rooks", () => {
+        render(<Chessboard />);
+        
+        expect(screen.getAllByRole("button", {name: /rook/i})).toHaveLength(4);
+    });
 });

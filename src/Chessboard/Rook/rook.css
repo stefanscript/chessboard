@@ -1,0 +1,44 @@
+.rook {
+    position: absolute;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border: 0;
+    padding: 0;
+    margin: 0;
+    background: transparent;
+}
+.rook .base {
+    background-color: #fff;
+    width: 46%;
+    height: 10%;
+    position: relative;
+}
+.rook .trunk {
+    background-color: #fff;
+    width: 34%;
+    height: 30%;
+    position: relative;
+    overflow: hidden;
+}
+.rook .top-collar {
+    background-color: #fff;
+    width: 46%;
+    height: 10%;
+}
+.rook .top {
+    width: 46%;
+    height: 5%;
+    display: flex;
+    justify-content: space-between;
+}
+.rook .top-brick {
+    width: 25%;
+    height: 100%;
+    background-color: #fff;
+}
