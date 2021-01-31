@@ -1,0 +1,21 @@
+.chessboard {
+    width: 100%;
+    max-width: 600px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: repeat(8, 12.5%);
+    grid-template-rows: repeat(8, 12.5%);
+    /*transform: rotateX(45deg);*/
+}
+
+.square {
+    width: 100%;
+    padding-top: 100%;
+    background-color: var(--brown);
+    color: #000;
+    position: relative;
+}
+
+.square.white {
+    background-color: var(--sand);
+}
