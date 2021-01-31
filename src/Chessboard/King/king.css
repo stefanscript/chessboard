@@ -1,0 +1,106 @@
+.king {
+    position: absolute;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border: 0;
+    padding: 0;
+    margin: 0;
+    background: transparent;
+}
+.king .base {
+    background-color: #fff;
+    width: 45%;
+    height: 10%;
+    border-radius: 30%;
+    position: relative;
+    top: -1px;
+}
+.king .base-top {
+    background-color: #fff;
+    width: 34%;
+    height: 7%;
+    border-radius: 41%;
+}
+.king .trunk {
+    background-color: #fff;
+    width: 20%;
+    height: 30%;
+    position: relative;
+    border-top-left-radius: 20%;
+    border-top-right-radius: 20%;
+    overflow: hidden;
+}
+.king .trunk:after,
+.king .trunk:before {
+    content: " ";
+    position: absolute;
+    top: 0;
+    right: 104%;
+    width: 100%;
+    padding-top: 200%;
+    border-radius: 50%;
+    background-color: var(--sand);
+    transform: rotate(35deg);
+}
+.king .trunk:after {
+    left: 104%;
+    transform: rotate(-35deg);
+}
+.black .king .trunk:after,
+.black .king .trunk:before {
+    background-color: var(--brown);
+}
+.king .top-collar {
+    background-color: #fff;
+    width: 28%;
+    height: 4%;
+    border-radius: 100%;
+}
+.king .crown {
+    background-color: #fff;
+    width: 22%;
+    height: 18%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.king .crown-top {
+    background-color: #fff;
+    width: 10%;
+    height: 6%;
+    border-radius: 100%;
+}
+
+.king .crown-cross {
+    width: 12%;
+    height: 10%;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.king .crown-cross-line {
+    width: 100%;
+    height: 35%;
+    position: absolute;
+    background-color: #fff;
+}
+.king .crown-cross-line:last-of-type {
+    transform: rotate(90deg);
+}
+
+.king.black .crown,
+.king.black .crown-cross-line,
+.king.black .top-collar,
+.king.black .crown-top,
+.king.black .trunk,
+.king.black .base,
+.king.black .base-top {
+    background-color: #000;
+}

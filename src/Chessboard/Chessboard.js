@@ -6,6 +6,7 @@ import Rook from "./Rook/Rook";
 import Knight from "./Knight/Knight";
 import Bishop from "./Bishop/Bishop";
 import Queen from "./Queen/Queen";
+import King from "./King/King";
 
 const squares = Array(64).fill(0);
 
@@ -21,6 +22,8 @@ function Chessboard() {
                     {([2, 5, 58, 61].includes(index)) && <Bishop black={index === 2 || index === 5} white={index === 58 || index === 61}/>}
                     {index === 3 && <Queen black/>}
                     {index === 59 && <Queen white/>}
+                    {index === 4 && <King black/>}
+                    {index === 60 && <King white/>}
                 </div>
                 ))}
         </div>
