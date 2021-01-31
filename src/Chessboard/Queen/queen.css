@@ -1,0 +1,99 @@
+.queen {
+    position: absolute;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border: 0;
+    padding: 0;
+    margin: 0;
+    background: transparent;
+}
+.queen .base {
+    background-color: #fff;
+    width: 45%;
+    height: 10%;
+    border-radius: 30%;
+    position: relative;
+    top: -1px;
+}
+.queen .base-top {
+    background-color: #fff;
+    width: 34%;
+    height: 7%;
+    border-radius: 41%;
+}
+.queen .trunk {
+    background-color: #fff;
+    width: 20%;
+    height: 30%;
+    position: relative;
+    border-top-left-radius: 20%;
+    border-top-right-radius: 20%;
+    overflow: hidden;
+}
+.queen .trunk:after,
+.queen .trunk:before {
+    content: " ";
+    position: absolute;
+    top: 0;
+    right: 104%;
+    width: 100%;
+    padding-top: 200%;
+    border-radius: 50%;
+    background-color: var(--sand);
+    transform: rotate(35deg);
+}
+.queen .trunk:after {
+    left: 104%;
+    transform: rotate(-35deg);
+}
+.black .queen .trunk:after,
+.black .queen .trunk:before {
+    background-color: var(--brown);
+}
+.queen .top-collar {
+    background-color: #fff;
+    width: 28%;
+    height: 4%;
+    border-radius: 100%;
+}
+.queen .crown {
+    background-color: #fff;
+    width: 22%;
+    height: 18%;
+    display: flex;
+    justify-content: space-between;
+}
+.queen .crown-spike {
+    width: 16%;
+    height: 50%;
+    background-color: #fff;
+    position: relative;
+    top: -24%;
+    transform: rotate(-45deg);
+    border-radius: 100% 100% 0 0;
+}
+.queen .crown-spike:last-child {
+    transform: rotate(45deg);
+}
+.queen .crown-top {
+    background-color: #fff;
+    width: 10%;
+    height: 6%;
+    border-radius: 100%;
+}
+
+.queen.black .crown,
+.queen.black .crown-spike,
+.queen.black .top-collar,
+.queen.black .crown-top,
+.queen.black .trunk,
+.queen.black .base,
+.queen.black .base-top {
+    background-color: #000;
+}

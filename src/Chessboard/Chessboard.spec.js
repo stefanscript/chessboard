@@ -22,4 +22,9 @@ describe("Chessboard", () => {
         
         expect(screen.getAllByRole("button", {name: /bishop/i})).toHaveLength(4);
     });
+    it("should show 2 queens", () => {
+        render(<Chessboard />);
+        
+        expect(screen.getAllByRole("button", {name: /queen/i})).toHaveLength(2);
+    });
 });
